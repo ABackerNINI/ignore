@@ -1,0 +1,13 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": [
+                "if [ ! -e 'Makefile' ] && [ ! -e 'makefile' ]; then ascan -abfg; fi; ",
+                "make debug;"
+            ]
+        }
+    ]
+}
